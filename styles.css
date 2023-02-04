@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sora:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+}
+h1, h2, h3{
+    font-family: 'Sora', sans-serif;
+}
+h4, h5, h6, p{
+    font-family: 'Inter', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 20px;
+}
+header .logo{
+    margin-left: 72px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+    margin-left: 50px;
+}
+header ul li{
+    font-size: 18px;
+    color: #333333;
+    line-height: 150%;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+header ul li:nth-child(7){
+    margin-left: 500px;
+    color: #FFFFFF;
+}
+header ul img:not(:last-child){
+    margin-right: 20px;
+}
+main .main-left{
+    width: 50%;
+    height: 100vh;
+    background: #F2F4FD;
+    display: flex;
+    flex-direction: column;
+}
+main .main-left .main-title{
+    width: 80%;
+    height: 30%;
+    margin: 200px 0 0 72px;
+}
+main .main-left .main-title h1{
+    font-size: 50px;
+    line-height: 70px;
+    color: #E51D37;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+main .main-left .main-title p{
+    font-size: 20px;
+    line-height: 29px;
+    color: #333333;
+    opacity: 0.75;
+    font-weight: 500;
+}
+
+main .main-left .main-account{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: 72px;
+}
+main .main-left .main-account button{
+    width: 230px;
+    height: 50px;
+    background: linear-gradient(220.94deg, #EB3850 14.43%, #CB162E 85.28%);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+main .main-left .main-account button img{
+    width: 24px;
+}
+main .main-left .main-account a{
+    cursor: pointer;
+}
+main .main-left .main-account a img{
+    width: 20px;
+}
+main .main-right{
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(220.94deg, #EB3850 14.43%, #CB162E 85.28%);
+    display: flex;
+    align-items: center;
+}
+main .main-right .div-cards{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.card-1{
+    position: absolute;
+    margin: 0 200px 50px 0;
+}
+.card-2{
+    margin: 50px 0 0 200px;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: row;
+}
+section .section-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+section .section-left .section-smart{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .section-left .section-smart .smart-1, .smart-2{
+    position: absolute;
+}
+section .section-left .section-smart .div-img-1, .div-img-2, .div-img-3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgba(229, 29, 55, 0.1);
+    border-radius: 10px;
+}
+section .section-left .section-smart .div-img-1{
+    left: -12.62%;
+    right: 84.17%;
+    top: -40.28%;
+    bottom: 75.89%;
+    
+}
+section .section-left .section-smart .div-img-2{
+    left: 28.62%;
+    right: 84.17%;
+    top: -5.28%;
+    bottom: 75.89%;
+}
+
+section .section-left .section-smart .div-img-3{
+    left: -42.62%;
+    right: 84.17%;
+    top: 30.28%;
+    bottom: 75.89%;
+}
+section .section-right{
+    width: 50%;
+    height: 100%;
+}
+section .section-right h2{
+    font-size: 36px;
+    line-height: 45px;
+    color: #333333;
+    margin-top: 100px;
+    font-weight: 600;
+}
+section .section-right h5{
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    opacity: 0.75;
+    margin-top: 15px;
+    width: 100%;
+    font-weight: 400;
+}
+section .section-right .section-information{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+section .section-right .section-information .information{
+    width: 95%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+}
+section .section-right .section-information .information:not(:nth-child(3)){
+    border-bottom: 0.5px solid rgba(229, 29, 55, 0.2);
+}
+section .section-right .section-information .information .information-img{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+section .section-right .section-information .information .information-img img{
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(229, 29, 55, 0.06);
+    border-radius: 8px;
+}
+section .section-right .section-information .information .text-information{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section .section-right .section-information .information .text-information h4{
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+section .section-right .section-information .information .text-information p{
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+    opacity: 0.75;
+    font-weight: 400;
+}
+.benefits{
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F4FD;
+    display: flex;
+    flex-direction: column;
+}
+.benefits .background-lines{
+    width: 1920px;
+    height: 100vh;
+    position: absolute;
+    padding-right: 480px;
+}
+.benefits p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: linear-gradient(220.94deg, #EB3850 14.43%, #CB162E 85.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 50px 0 0 72px;
+    z-index: 3;
+}
+.benefits h2{
+    font-size: 36px;
+    line-height: 45px;
+    color: #333333;
+    font-weight: 600;
+    margin-left: 72px;
+    z-index: 3;
+}
+.benefits .benefits-information{
+    width: 1000px;
+    height: 480px;
+    display: grid;
+    grid-template-columns: repeat(4, 242px);
+    grid-template-rows: repeat(2, 235px);
+    grid-gap: 10px;
+    align-self: center;
+    margin: 30px 0 0 0px;
+    z-index: 3;
+}
+.benefits-information div{
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+.benefits-information div:nth-child(4){
+    grid-area: 2/2;
+}
+.benefits-information div:nth-child(5){
+    grid-area: 2/2;
+    grid-column: 3/4;
+}
+.benefits-information div:nth-child(6){
+    grid-area: 2/2;
+    grid-column: 4/5;
+}
+.benefits-information img{
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+}
+.benefits-information h3{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: -0.014em;
+}
+.benefits-information h4{
+    font-size: 10px;
+    line-height: 20px;
+    color: #333333;
+    opacity: 0.75;
+    font-weight: 400;
+    margin: 10px 0 15px 0;
+}
+.benefits-information a{
+    font-size: 12px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #E51D37;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.div-depositions{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-depositions p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: linear-gradient(220.94deg, #EB3850 14.43%, #CB162E 85.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 72px;
+}
+.div-depositions h2{
+    font-size: 36px;
+    line-height: 56px;
+    font-weight: 400;
+    color: #282421;
+    margin: 0 0 40px 72px;
+}
+.div-depositions .depositions{
+    width: 90%;
+    height: 35%;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 20px;
+    align-items: center;
+    align-self: center;
+}
+.div-depositions .depositions div{
+    height: 25vh;
+}
+.div-depositions .depositions div .depositions-name{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.div-depositions .depositions div .depositions-name img{
+    height: 100%;
+}
+.div-depositions .depositions div .depositions-name h3{
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #333333;
+    opacity: 0.75;
+}
+.div-depositions .depositions div h4{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+    width: 95%;
+}
+
+.div-app{
+    width: 100%;
+    height: 80vh;
+    background-color: #F2F4FD;
+    display: flex;
+    flex-direction: row;
+}
+.div-app .app-left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-app .app-left h2{
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 600;
+    color: #282421;
+    margin-left: 72px;
+}
+.div-app .app-left h5{
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #333333;
+    opacity: 0.75;
+    margin: 20px 0 30px 72px;
+}
+.div-app .app-left .install-app{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 72px;
+}
+.div-app .app-left .install-app a{
+    width: 200px;
+    height: 60px;
+    background: #353436;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.div-app .app-left .install-app a img{
+    width: 30px;
+    height: 100%;
+}
+.div-app .app-left .install-app a .install-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.div-app .app-left .install-app a .install-text p{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Assistant';
+    font-weight: 400;
+    color: #FBF9FC;
+}
+.div-app .app-left .install-app a .install-text h4{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Assistant';
+    font-weight: 700;
+    color: #FBF9FC;
+}
+
+.div-app .app-right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-app .app-right .app-img{
+    width: 377.62px;
+    height: 377.62px;
+    background: linear-gradient(220.94deg, #EB3850 14.43%, #CB162E 85.28%);
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-doubt{
+    width: 100%;
+    height: 80vh;
+    /* background-color: purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E5E5E5;
+}
+.div-doubt h6{
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: linear-gradient(220.94deg, #EB3850 14.43%, #CB162E 85.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.div-doubt h2{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #333333;
+}
+.div-doubt h5{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #5F5F5F;
+    margin: 50px 0;
+}
+.div-doubt .div-questions{
+    width: 50%;
+    height: 50%;
+}
+.div-doubt .div-questions .question{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 0.5px solid rgba(229, 29, 55, 0.1);
+    border-bottom: 0.5px solid rgba(229, 29, 55, 0.1);
+    cursor: pointer;
+}
+.div-doubt .div-questions .question .question-icon-1{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-doubt .div-questions .question .question-icon-1 .rectangle{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-doubt .div-questions .question .question-text{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 15px;
+}
+.div-doubt .div-questions .question .question-icon-2{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
